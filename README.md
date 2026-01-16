@@ -1,7 +1,6 @@
 # NakaWoot Frontend
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/oyaga/nakawoot/main/.github/logo.png" alt="NakaWoot" width="120" />
 
 # NakaWoot
 
@@ -11,11 +10,10 @@ Gerencie WhatsApp, Instagram, Facebook, Telegram e Email em um só lugar.
 
 <br/>
 
-[📖 Documentação](.docs/README.md)
+[📖 Documentação](.docs/docker-exemple.yml)
 
 <br/>
 
-![Dashboard Preview](https://raw.githubusercontent.com/oyaga/nakawoot/main/.github/preview.png)
 
 </div>
 
@@ -59,18 +57,25 @@ Construído com as melhores tecnologias do mercado:
 
 ---
 
-## Começar*
+## Requisitos
+
+Para rodar o NakaWoot você precisa de:
+
+| Serviço                                                        | Descrição                     | Obrigatório |
+| -------------------------------------------------------------- | ----------------------------- | :---------: |
+| [Supabase](https://supabase.com)                               | Autenticação e banco de dados |     ✅      |
+| [Evolution API](https://github.com/EvolutionAPI/evolution-api) | Conexão com WhatsApp          |  Opcional   |
+| [Typebot](https://typebot.io)                                  | Automação de fluxos           |  Opcional   |
+
+> 💡 **Dica:** Você pode usar o [Supabase](https://supabase.com) gratuitamente para começar.
+
+---
+
+## Começar\*
 
 Para instalação local, consulte a [documentação técnica](.docs/README.md).
 
 ---
-
-<div align="center">
-
-</div>
-
----
-
 ## 🐳 Docker
 
 ```bash
