@@ -1,0 +1,57 @@
+version: "3.7"
+services:
+  nakawoot_app:
+    image: oyaga/nakawoot:stable
+    networks:
+      - SUA-REDE
+    environment:
+      - PORT=4120
+      - SERVER_URL=
+      - DB_HOST=supabase_db
+      - DB_PORT=5432
+      - DB_USER=supabase_admin
+      - DB_PASSWORD=
+      - DB_NAME=postgres
+      - DB_SSLMODE=disable
+      - SUPABASE_URL=http://supabase_kong:8000
+      - SUPABASE_JWT_SECRET=
+      - SUPABASE_SERVICE_ROLE_KEY=
+      - SUPABASE_ANON_KEY=
+      
+      ## ESSENCIAL PARA CORRIGIR O ERRO DE MÍDIA
+      - SUPABASE_PUBLIC_URL=
+
+      - USE_MINIO=false
+      - USE_SUPABASE_STORAGE=true
+      - SUPABASE_STORAGE_BUCKET=mensager-media
+      
+      - FRONTEND_PATH=/app/manager/dist
+      - MEDIA_BASE_URL=
+    deploy:
+      mode: replicated
+      replicas: 1
+      placement:
+        constraints:
+          - node.role == manager
+      resources:
+        limits:
+          cpus: "1"
+          memory: 512M
+      update_config:
+        parallelism: 1
+        delay: 10s
+      restart_policy:
+        condition: on-failure
+      labels:
+        - traefik.enable=true
+        - traefik.http.routers.nakawoot.rule=Host(`SEU-DOMINIO.COM`)
+        - traefik.http.routers.nakawoot.entrypoints=websecure
+        - traefik.http.routers.nakawoot.tls.certresolver=letsencryptresolver
+        - traefik.http.routers.nakawoot.service=nakawoot
+        - traefik.http.services.nakawoot.loadbalancer.server.port=4120
+        - traefik.http.services.nakawoot.loadbalancer.passHostHeader=true
+
+networks:
+  SUA-REDE
+    external: true
+    name: SUA-REDE
