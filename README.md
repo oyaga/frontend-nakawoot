@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NakaWoot Frontend
 
-## Getting Started
+<p align="center">
+  <strong>🚀 Interface de gerenciamento para integrações NakaWoot</strong>
+</p>
 
-First, run the development server:
+O **NakaWoot Frontend** é a interface oficial para configurar e gerenciar instâncias do [Evolution API](https://github.com/EvolutionAPI/evolution-api), conectando-as ao [Chatwoot](https://chatwoot.com) e [Typebot](https://typebot.io).
+
+---
+
+## ✨ Funcionalidades
+
+- **Gerenciamento de Instâncias** — Crie, configure e monitore instâncias do Evolution API
+- **Integração Chatwoot** — Configure inboxes, tokens e webhooks
+- **Integração Typebot** — Conecte fluxos de automação
+- **Dashboard em Tempo Real** — Monitore conversas e métricas
+- **Tema Personalizável** — Suporte a modo claro/escuro
+
+---
+
+## 🛠️ Tech Stack
+
+| Tecnologia                               | Descrição                |
+| ---------------------------------------- | ------------------------ |
+| [Next.js 15](https://nextjs.org)         | Framework React          |
+| [ShadCN UI](https://ui.shadcn.com)       | Componentes de interface |
+| [Tailwind CSS](https://tailwindcss.com)  | Estilização              |
+| [Lucide Icons](https://lucide.dev)       | Ícones                   |
+| [TypeScript](https://typescriptlang.org) | Tipagem estática         |
+
+---
+
+## 🚀 Getting Started
+
+### Pré-requisitos
+
+- Node.js 18+
+- npm ou yarn
+
+### Instalação
 
 ```bash
+# Clone o repositório
+git clone https://github.com/oyaga/frontend-nakawoot.git
+cd frontend-nakawoot
+
+# Instale as dependências
+npm install
+
+# Configure as variáveis de ambiente
+cp .env.example .env.local
+# Edite .env.local com suas configurações
+
+# Inicie o servidor de desenvolvimento
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Acesse [http://localhost:3000](http://localhost:3000) para ver a aplicação.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📦 Build para Produção
 
-## Learn More
+```bash
+npm run build
+npm start
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🐳 Docker
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+docker build -t nakawoot-frontend .
+docker run -p 3000:3000 nakawoot-frontend
+```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📄 Licença
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Este projeto é open source sob a licença MIT.
+
+---
+
+<p align="center">
+  Feito com ❤️ pela comunidade NakaWoot
+</p>
