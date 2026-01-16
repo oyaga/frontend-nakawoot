@@ -71,8 +71,10 @@ npm start
 ## 🐳 Docker
 
 ```bash
-docker build -t nakawoot-frontend .
-docker run -p 3000:3000 nakawoot-frontend
+| Tag                     | Descrição                  |
+| ----------------------- | -------------------------- |
+| `oyaga/nakawoot:latest` | Última versão estável      |
+| `oyaga/nakawoot:stable` | Versão de produção testada |
 ```
 
 ---
