@@ -1,70 +1,73 @@
 # NakaWoot Frontend
+<div align="center">
 
-<p align="center">
-  <strong>🚀 Interface de gerenciamento para integrações NakaWoot</strong>
-</p>
+<img src="https://raw.githubusercontent.com/oyaga/nakawoot/main/.github/logo.png" alt="NakaWoot" width="120" />
 
-O **NakaWoot Frontend** é a interface oficial para configurar e gerenciar instâncias do [Evolution API](https://github.com/EvolutionAPI/evolution-api), conectando-as ao [Chatwoot](https://chatwoot.com) e [Typebot](https://typebot.io).
+# NakaWoot
 
----
+**Atendimento unificado para sua empresa crescer**
 
-## ✨ Funcionalidades
+Gerencie WhatsApp, Instagram, Facebook, Telegram e Email em um só lugar.
 
-- **Gerenciamento de Instâncias** — Crie, configure e monitore instâncias do Evolution API
-- **Integração Chatwoot** — Configure inboxes, tokens e webhooks
-- **Integração Typebot** — Conecte fluxos de automação
-- **Dashboard em Tempo Real** — Monitore conversas e métricas
-- **Tema Personalizável** — Suporte a modo claro/escuro
+<br/>
 
----
+[📖 Documentação](.docs/README.md)
 
-## 🛠️ Tech Stack
+<br/>
 
-| Tecnologia                               | Descrição                |
-| ---------------------------------------- | ------------------------ |
-| [Next.js 15](https://nextjs.org)         | Framework React          |
-| [ShadCN UI](https://ui.shadcn.com)       | Componentes de interface |
-| [Tailwind CSS](https://tailwindcss.com)  | Estilização              |
-| [Lucide Icons](https://lucide.dev)       | Ícones                   |
-| [TypeScript](https://typescriptlang.org) | Tipagem estática         |
+![Dashboard Preview](https://raw.githubusercontent.com/oyaga/nakawoot/main/.github/preview.png)
+
+</div>
 
 ---
 
-## 🚀 Getting Started
+## Por que NakaWoot?
 
-### Pré-requisitos
-
-- Node.js 18+
-- npm ou yarn
-
-### Instalação
-
-```bash
-# Clone o repositório
-git clone https://github.com/oyaga/frontend-nakawoot.git
-cd frontend-nakawoot
-
-# Instale as dependências
-npm install
-
-# Configure as variáveis de ambiente
-cp .env.example .env.local
-# Edite .env.local com suas configurações
-
-# Inicie o servidor de desenvolvimento
-npm run dev
-```
-
-Acesse [http://localhost:3000](http://localhost:3000) para ver a aplicação.
+|                💬 **Multicanal**                 |            ⚡ **Tempo Real**             |                🤖 **Automação**                |          📊 **Métricas**           |
+| :----------------------------------------------: | :--------------------------------------: | :--------------------------------------------: | :--------------------------------: |
+| WhatsApp, Instagram, Messenger, Telegram e Email | Conversas sincronizadas instantaneamente | Integração com Typebot para fluxos automáticos | Dashboard com dados de performance |
 
 ---
 
-## 📦 Build para Produção
+## Funcionalidades
 
-```bash
-npm run build
-npm start
-```
+- **Inbox Unificado** — Todas as conversas em uma interface
+- **Múltiplos Atendentes** — Distribua conversas entre sua equipe
+- **Automação** — Conecte com Typebot para respostas automáticas
+- **Histórico Completo** — Nunca perca o contexto de uma conversa
+- **Tema Escuro** — Interface moderna com suporte a dark mode
+
+---
+
+## Canais Suportados
+
+<div align="center">
+
+| WhatsApp | Instagram | Messenger | Telegram | Email |
+| :------: | :-------: | :-------: | :------: | :---: |
+|    ✅    |    ✅     |    ✅     |    ✅    |  ✅   |
+
+</div>
+
+---
+
+## Tecnologias
+
+Construído com as melhores tecnologias do mercado:
+
+**Next.js** · **React** · **TypeScript** · **Tailwind CSS** · **Supabase**
+
+---
+
+## Começar*
+
+Para instalação local, consulte a [documentação técnica](.docs/README.md).
+
+---
+
+<div align="center">
+
+</div>
 
 ---
 
